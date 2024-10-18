@@ -1,0 +1,92 @@
+:root {
+    --cor-titulo: white;
+    --cor-subtitulo: #fd288d;
+    --cor-fundo: #2b1821;
+    --cor-botao: #fd288d;
+    --cor-botao-hover: #c2186b;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-titulo);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#app {
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.subtitulo {
+    color: var(--cor-subtitulo);
+    margin-bottom: 30px;
+}
+
+.botao {
+    background-color: var(--cor-botao);
+    color: var(--cor-titulo);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.planos-container, .vantagens-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px 0;
+}
+
+.plano, .vantagem {
+    border: 1px solid var(--cor-botao);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.plano-titulo {
+    color: var(--cor-subtitulo);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.imagem {
+    width: 80px;
+    height: auto;
+    margin: 15px 0;
+}
+
+.imagem-inicial {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}

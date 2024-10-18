@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinatura de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Tela Inicial -->
+        <div id="home" class="container">
+            <h1 class="titulo">Jogue sem limites. Experimente 1 mês de Gamepass grátis.</h1>
+            <h2 class="subtitulo">Depois, apenas R$ 21,90/mês. Cancele quando quiser. Veja as vantagens.</h2>
+            <button class="botao" onclick="showVantagens()">Experimente de graça por 1 mês</button>
+            <button class="botao" onclick="showPlanos()">Ver todos os planos</button>
+            <div class="imagem-inicial">
+                
+            </div>
+        </div>
+
+        <!-- Vantagens -->
+        <div id="vantagens" class="container" style="display:none;">
+            <h1 class="titulo">Principais Vantagens</h1>
+            <div class="vantagens-container">
+                <div class="vantagem">
+                    <img src="https://cdn-icons-png.flaticon.com/512/116/116688.png" alt="Nuvem" class="imagem">
+                    <p>Utilizar a nuvem te permite jogar em qualquer dispositivo e a qualquer momento.</p>
+                </div>
+                <div class="vantagem">
+                    <img src="https://cdn-icons-png.flaticon.com/512/394/394130.png" alt="Controle" class="imagem">
+                    <p>Possua um catálogo recheado de jogos.</p>
+                </div>
+                <div class="vantagem">
+                    <img src="https://cdn-icons-png.flaticon.com/512/151/151770.png" alt="Relógio" class="imagem">
+                    <p>Jogue jogos antecipadamente, lançados no catálogo.</p>
+                </div>
+            </div>
+            <button class="botao" onclick="showHome()">Voltar</button>
+        </div>
+
+        <!-- Planos -->
+        <div id="planos" class="container" style="display:none;">
+            <h1 class="titulo">Planos de Assinatura</h1>
+            <div class="planos-container">
+                <div class="plano">
+                    <h2 class="plano-titulo">PC</h2>
+                    <p>R$ 35,99/mês</p>
+                    <p>Centenas de jogos de alta qualidade no PC</p>
+                    <button class="botao">Assinar</button>
+                </div>
+                <div class="plano">
+                    <h2 class="plano-titulo">Console</h2>
+                    <p>R$ 35,99/mês</p>
+                    <p>Centenas de jogos de alta qualidade no console</p>
+                    <button class="botao">Assinar</button>
+                </div>
+                <div class="plano">
+                    <h2 class="plano-titulo">Ultimate</h2>
+                    <p>R$ 59,99/mês</p>
+                    <p>Centenas de jogos de alta qualidade no console, PC e nuvem</p>
+                    <button class="botao">Assinar</button>
+                </div>
+            </div>
+            <button class="botao" onclick="showHome()">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
